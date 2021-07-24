@@ -1,3 +1,5 @@
 *.code-workspace
+dist/
 .history/
+info.json
 node_modules
