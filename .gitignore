@@ -1,1 +1,3 @@
+*.code-workspace
+.history/
 node_modules
