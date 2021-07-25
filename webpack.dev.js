@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
@@ -17,6 +18,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin({
       verbose: true,
       protectWebpackAssets: false
